@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami/core/utils/app_colors.dart';
 
 class RadioScreen extends StatelessWidget {
   static const String routeName = '/radio_screen';
@@ -6,6 +7,6 @@ class RadioScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text('Radio'));
+    return Container(color: AppColors.gold, child: Text('Radio'));
   }
 }
