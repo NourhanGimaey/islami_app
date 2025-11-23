@@ -79,25 +79,21 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             backgroundColor: AppColors.gold,
-
             icon: SvgPicture.asset(AppIcons.icHadith),
             label: 'Hadith',
           ),
           BottomNavigationBarItem(
             backgroundColor: AppColors.gold,
-
             icon: SvgPicture.asset(AppIcons.icSibha),
             label: 'Sibha',
           ),
           BottomNavigationBarItem(
             backgroundColor: AppColors.gold,
-
             icon: SvgPicture.asset(AppIcons.icRadio),
             label: 'Radio',
           ),
           BottomNavigationBarItem(
             backgroundColor: AppColors.gold,
-
             icon: SvgPicture.asset(AppIcons.icTime),
             label: 'Prayer Time',
           ),

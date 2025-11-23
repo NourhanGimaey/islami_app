@@ -29,4 +29,6 @@ abstract class AppImages {
   static const String sibhaBody = 'assets/images/sibha_body.png';
   static const String sibhaTail = 'assets/images/sibha_tail.png';
   static const String sibha = 'assets/images/sibha.png';
+  static const String radioCardBackground =
+      'assets/images/radio_card_background.png';
 }

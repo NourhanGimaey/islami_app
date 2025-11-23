@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:islami/core/utils/app_assets.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/quran_data.dart';
-import 'package:islami/core/widgets/verse_item.dart';
+import 'package:islami/main_layout/quran/widgets/verse_item.dart';
 
 class QuranVerses extends StatefulWidget {
   static const routeName = '/quran_verses';

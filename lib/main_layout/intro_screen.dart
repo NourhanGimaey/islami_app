@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/models/intro_screen_model.dart';
 import 'package:islami/core/utils/app_assets.dart';
 import 'package:islami/core/utils/app_colors.dart';
-import 'package:islami/screens/home_screen.dart';
+import 'package:islami/main_layout/home_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -20,6 +20,7 @@ class _IntroScreenState extends State<IntroScreen> {
 
   @override
   Widget build(BuildContext context) {
+    bool isFirstPage = currentPageIndex == 0;
     bool isLastPage =
         currentPageIndex == WelcomeDetials.welcomeDetails.length - 1;
 
@@ -33,12 +34,12 @@ class _IntroScreenState extends State<IntroScreen> {
             ),
             Expanded(
               child: PageView.builder(
+                itemCount: WelcomeDetials.welcomeDetails.length,
                 itemBuilder: (context, index) {
                   return Image.asset(
                     WelcomeDetials.welcomeDetails[index].imagePath,
                   );
                 },
-                itemCount: WelcomeDetials.welcomeDetails.length,
                 onPageChanged: (value) {
                   currentPageIndex = value;
                   currentPageIndex = _pageController.page!.round();
@@ -71,9 +72,12 @@ class _IntroScreenState extends State<IntroScreen> {
                     curve: Curves.easeIn,
                   );
                 },
-                child: Text(
-                  'Back',
-                  style: Theme.of(context).textTheme.bodyMedium,
+                child: Visibility(
+                  visible: !isFirstPage,
+                  child: Text(
+                    'Back',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
                 ),
               ),
               title: Align(
