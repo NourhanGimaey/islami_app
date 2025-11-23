@@ -30,6 +30,7 @@ void filterChapters (String text){
       decoration: InputDecoration(
         prefixIcon: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14),
+          // ignore: deprecated_member_use
           child: SvgPicture.asset(AppIcons.icQuran, color: AppColors.gold),
         ),
         prefixIconConstraints: BoxConstraints(minWidth: 28, minHeight: 28),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islami/core/utils/app_assets.dart';
 import 'package:islami/core/utils/app_colors.dart';
 import 'package:islami/core/utils/quran_data.dart';
-import 'package:islami/core/widgets/search_widget.dart';
-import 'package:islami/screens/quran_verses.dart';
+import 'package:islami/main_layout/quran/widgets/search_widget.dart';
+import 'package:islami/main_layout/quran/quran_verses.dart';
 
 class QuranScreen extends StatelessWidget {
   static const String routeName = '/quran_screen';
